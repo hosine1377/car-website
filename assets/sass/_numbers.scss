@@ -1,0 +1,66 @@
+.numbers{
+    font-family: 'iranyekan';
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    background-color: $nav-background;
+    height: auto;
+    .numbers-text{
+        margin: 5rem 0 !important;
+        p{
+            color: #525252;
+            padding: .5rem  ;
+            background-color: $numbard-card-bg; 
+            font-size: 24px;
+            font-weight: 400;
+            font-style: italic;
+            width:fit-content ;
+            border-radius: 50px;
+            margin: 1rem 0;
+            margin: auto;
+        }
+        h1{
+            font-size: 3rem;
+            color: $light-color;
+            white-space: pre-line;
+            margin: 1rem 0;
+            span{
+                position: relative;
+                color: $main-yellow;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -15px;
+                    right: 0;
+                    width: 100%;
+                    height: 5px;
+                    background-color: #ffc107;
+                  animation: fade-left 1s ease-in;
+                }
+            }
+        }
+    }
+    .wrapper-card{
+        border-radius: 10px;
+        .card{
+            background-color: $numbard-card-bg;
+            h1{
+                font-size: 4rem;
+                font-weight: 600;
+            }
+        }
+        .btn-numbers{
+            bottom: -27px;
+            right: 80px;
+            background: $light-color;
+        
+    }
+    &:hover{
+        background: $light-color;
+        .btn-numbers{
+            background-color: $main-yellow;
+        }
+    }
+    
+    }
+    
+}

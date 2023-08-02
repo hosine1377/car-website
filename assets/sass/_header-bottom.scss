@@ -1,0 +1,46 @@
+.header-bottom{
+    font-family: 'iranyekan';
+    display: none;
+}
+
+@media all and (max-width:762px){
+.header-bottom{
+    display:  block ;
+    background-color: $main-yellow;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 1100;
+    transition: all .3s ease;
+ 
+    .header-bottom-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        i{
+            color: $dark;
+            font-size: 2rem;
+        }
+        h4{
+            color: $dark;
+            margin-right: .5rem;
+        }
+    }
+      &:hover{
+        background-color: $dark;
+        .header-bottom-body{
+            i{
+                color: $main-yellow;
+            }
+            h4{
+                color: $main-yellow;
+
+            }
+        }
+    }
+}
+}
+

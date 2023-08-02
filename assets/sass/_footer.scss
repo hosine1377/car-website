@@ -1,0 +1,58 @@
+footer{
+    // padding-top: 8rem;
+    font-family: 'iranyekan';
+    padding-bottom: 4rem;
+    background-color: $nav-background;
+    height: auto;
+    .card{
+        background-color: $main-yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 4rem 0rem;
+        margin-top:6rem ;
+        .icon-card{
+            width: 90px;
+            height: auto;
+            display: inline;
+            margin-left: 3rem;
+        }
+        h1{
+            margin-right: 2rem;
+        }
+        .number-phon{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: $dark;
+                bottom: -5px;
+                right: 0;
+            }
+        }
+    }
+    .footer-mark{
+        color: $navlink-color;
+    }
+    .icons-footer{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .icon{
+            width: 70px;;
+            height: 70px;
+            background: $swiper-icon-color;
+            border-radius: 50%;
+            line-height: 58px;
+            margin-right: 1rem;
+            i{
+               font-size: 2rem;
+               text-align: center;
+               margin: 18px;
+            }
+        }
+    }
+}

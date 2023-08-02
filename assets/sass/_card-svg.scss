@@ -1,0 +1,14 @@
+.container-svg-3{
+    .card-svg-3{
+        transform: rotateX(180deg);
+        svg{
+            height: 200px;
+        }
+    }
+    .svg-3-image{
+        width: 600px;
+        height: auto;
+        bottom: -40px;
+        left: 51px;
+    }
+}

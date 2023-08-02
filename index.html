@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="fa" dir="rtl" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- bootstrap icon link -->
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+ </head>
+  <body>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    
+    <!-- SATART HEADR  -->
+    <header class="position-relative"> 
+      <!-- Navabr -->
+      <section class=" z-3 position-absolute w-100 ">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid canva py-3 px-lg-4 ">
+                  <a class="navbar-brand" href="#"><img src="./assets/image/car-rental-logo.png" class="img-fluid"  alt=""></a>
+                  <div class="d-flex">
+                    <button class="navbar-toggler ms-2" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExampleLabel">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="shopping-cart-icon bg-warning p-1 rounded-5 text-center">
+                    <i class="bi bi-cart text-dark fs-2"></i>
+                  </div>
+                  </div>
+                  
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item px-1">
+                              <a class="nav-link actvie"  href="#">صفحه اصلی</a>
+                            </li>
+                            <li class="nav-item px-1">
+                              <a class="nav-link" href="#">اجاره خودرو</a>
+                            </li>
+                          <li class="nav-item px-1">
+                              <a class="nav-link" href="#">شعب</a>
+                            </li>
+                            <li class="nav-item px-1">
+                              <a class="nav-link" href="#">عضویت طلایی</a>
+                            </li>
+                            <li class="nav-item px-1">
+                              <a class="nav-link" href="#">درباره ما</a>
+                            </li>
+                            <li class="nav-item px-1 ">
+                              <a class="nav-link dropdown-toggle text-white position-relative " href="#"> صفحات</a>
+                              <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                                <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                                <li><a class="dropdown-item "  href="#"> Submenu item 3 </a>
+                                  
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">تماس با ما</a>
+                            </li>
+                          </ul>
+                          
+                    </div>
+                  </div>
+                  <form class="d-flex btn-rent-nav nav-btn " >
+                    <button class="btn btn-outline-warning px-3 rounded-5 px-4 py-2 " type="submit">اجاره سریع خودرو</button>
+                  </form>
+                  
+                </div>
+            </nav>
+      </section>
+ <!-- Swiper -->
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-imag" src="./assets/image/images.jpg" />
+              <img src="./assets/image/car-rental-layer.png" alt="" class="text-img-1 z-2 position-absolute">
+              <div class="text-slide-1 container-fluid">
+                <h1 class=" mb-5 ">اجاره ماشین ها و بهترین خدمات</h1>
+                <button class="btn btn-outline-warning px-3 rounded-5 px-4 py-2" type="submit">اجاره  ماشین</button>  
+              </div>
+              
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-imag" src="./assets/image/images2.jpg" />
+              <img src="./assets/image/car-rental-layer.png" alt="" class="text-img-2 z-3 ">
+                <div class="text-slide-2 container-fluid ">
+                  <h3>بهترین راه برای اجاره</h3>
+                  <h1 class="text-light">بهترین و ایمن ترین ماشین ها
+                    برای اسان کردن <span class="text-warning position-relative">رانندگی شما </span></h1> 
+                  <div>
+                      <button class="btn btn-outline-warning px-3 rounded-5 px-4 py-2" type="submit">  بهترین پیشنهادات</button>  
+                      <!-- <button type="button"  class=" btn icon-paly"><i class="bi bi-caret-right-fill fs-2 text-warning text-center"></i></button> -->
+                      <h3>چگونه کار می کند</h3>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div> -->
+        </div>
+        <div class="svg-continer">
+            <div class="svg-card">
+            <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406">
+              <path style="fill:#ffca08" d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z"></path>
+              <path style="fill:#ffca08" d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z"></path>
+              <path style="fill:#ffffff" d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z"></path>
+            </svg>	
+          </div>
+          <div class="card-img-car">
+            <img src="./assets/image/car-slider.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="card-icon-header">
+            <img src="./assets/image/icon-arrow-bottom1.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        
+       
+       
+        
+    </header>
+    <!-- END HEADER  -->
+    <!-- modall box for youtube video  -->
+    <!-- <section class="modall-box">
+      <div class="container-fluid">
+        <div class="icons-modall-box">
+             <button type="button" class="close" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="icon-zoom-in"><i class="bi bi-zoom-in"></i></div>
+            <div class="icon-zoom-out"><i class="bi bi-zoom-out"></i></div>
+            <div class="number-icon-modallbox"></div>
+            
+
+
+        </div>
+     
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </section> -->
+
+
+    <!-- START SECTION HOME  -->
+    <section class="home">
+      <div class="container position-relative ">
+            <div class="title">
+            <p>برتری خدمات اجاره ماشین اکسترا چیست؟</p>
+            <h1>
+              ما دقیقا می دانیم چه میخواهید،
+              <span class="text-warning position-relative">به ما اعتماد کنید!</span> 
+              </h1>
+            </div>
+            <div class="row">
+              <div class="col-xl-3 col-md-6">
+                 <div class="card ">
+                <div class="card-img-container d-flex justify-content-center align-items-center  ">
+                    <div class="card-img">
+                      <img src="./assets/image/home/home-1.jpg" alt="" class="w-100">
+                    </div>
+                  <div class="home-card-icon">
+                    <img src="./assets/image/home/do-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="card-text mt-5 mb-2 pt-3 text-center">
+                  <h1 class="fs-3">حس امنیت و آرامش</h1>
+                </div>
+                
+              </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="card">
+               <div class="card-img-container d-flex justify-content-center align-items-center ">
+                   <div class="card-img">
+                     <img src="./assets/image/home/home-2.jpg" alt="" class="w-100">
+                   </div>
+                 <div class="home-card-icon">
+                   <img src="./assets/image/home/do-icon.png" alt="">
+                 </div>
+               </div>
+               <div class="card-text mt-5 mb-2 pt-3 text-center">
+                <h1 class="fs-2">کارواش مجانی</h1>
+              </div>
+               
+             </div>
+             </div>
+             <div class="col-xl-3 col-md-6">
+              <div class="card">
+             <div class="card-img-container d-flex justify-content-center align-items-center ">
+                 <div class="card-img">
+                   <img src="./assets/image/home/home-1.jpg" alt="" class="w-100">
+                 </div>
+               <div class="home-card-icon">
+                 <img src="./assets/image/home/do-icon.png" alt="">
+               </div>
+             </div>
+             <div class="card-text mt-5 mb-2 pt-3 text-center">
+              <h1 class="fs-2">باشگاه مشتریان</h1>
+            </div>
+             
+           </div>
+           </div>
+           <div class="col-xl-3 col-md-6">
+            <div class="card">
+           <div class="card-img-container d-flex justify-content-center align-items-center ">
+               <div class="card-img">
+                 <img src="./assets/image/home/home-4.jpg" alt="" class="w-100">
+               </div>
+             <div class="home-card-icon">
+               <img src="./assets/image/home/do-icon.png" alt="">
+             </div>
+           </div>
+           <div class="card-text mt-5 mb-2 pt-3 text-center">
+            <h1 class="fs-2">مراحل ساده اجاره</h1>
+          </div>
+           
+         </div>
+         </div>
+            </div>
+            <div class="line "></div>
+            
+      </div>
+    </section>
+    <!-- END SECTION HOME  -->
+
+    <!-- START SECTION SVG CAR AFTER HOME  -->
+
+    <section class="container-svg-2 position-relative">
+      <div class="card-svg-2">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406">
+            <path style="fill:#ffca08" d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z"></path>
+            <path style="fill:#1c1601" d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z"></path>
+            <path style="fill:#1c1601" d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z"></path>
+          </svg>
+      </div>
+      <div class="svg-2-image position-absolute">
+        <img class="img-fluid" src="./assets/image/car-s1-home.png" alt="">
+      </div>
+      
+    </section>
+    <!-- END SECTION SVG CAR AFTER HOME  -->
+
+        <!-- START SECTION SERVICES  -->
+    <section class="services">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12   mb-5">
+          <div class="services-text ">
+            <p>پکیج خدمات ما؟</p>
+            <h1>پکیج های عضویت ماشین
+              <span>اکسترا</span></h1>
+            <h4>مجموعه متنوعی از خدمات را در راستای صنعت ر
+              نت خودرو ارائه می دهد که می توان
+              به اجاره ماشین همراه با رانندهو بدون راننده
+              اشاره کرد.</h4>
+              <button class="btn btn-outline-warning px-3 rounded-5 px-4 py-2 " type="submit"> اجاره ماشین</button>  
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12   mb-5">
+          <div class="row boxs">
+            <div class="col-lg-6 col-md-6 z-3 col-sm-12  mb-5">
+              <div class="card text-center border-warning border-5  rounded-5">
+               <div class="header-card rounded-5">
+                <div class="title p-3 bg-warning">
+                  <h1>پکیج ویژه </i></h1>
+                </div> 
+
+                  <div class="services-svg">
+                    <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 165">
+                      <path style="fill:transparent" d="M-3,0S398.468,103.5,799.951,103.5C1201.47,103.5,1603,0,1603,0V167H-3V0Z"></path>
+                      <path style="fill:transparent" d="M-3,25S398.468,128.5,799.951,128.5C1201.47,128.5,1603,25,1603,25V168H-3V25Z"></path>
+                      <path style="fill:#ffca08" d="M-3,49S398.468,152.5,799.951,152.5C1201.47,152.5,1603,49,1603,49V167.5H-3V49Z"></path>
+                    </svg>	
+                  </div>
+               </div>
+               
+                
+                <div class="text py-5">
+                  <ul class="py-3 px-5 text-end">
+                    <li class="list-unstyled mt-3 text-light">اجاره ماشین ویژه <i class="bi bi-check-lg"></i></li>
+                    <li class="list-unstyled mt-3 text-light">اجاره ماشین عادی</li>
+                    <li class="list-unstyled mt-3 text-light">۳٠٪ امتیاز</li>
+                    <li class="list-unstyled mt-3 text-light">نامحدود روزانه</li>
+                    <li class="list-unstyled mt-3 text-light">کارواش</li>
+                    <li class="list-unstyled mt-3 text-light">ماشین های جدید</li>
+                    <li class="list-unstyled mt-3 text-light">اشتراک ویژه </li>
+                    <li class="list-unstyled mt-3 text-light">۲۰ ٪ تخفیف</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-5 box-col-text" >
+              <div class="card text-center border-5 border-light bg-transparent rounded-5 ">
+                <div class="header-card rounded-5">
+                  <div class="title p-3 bg-light">
+                    <h1>اجاره روزانه</h1>
+                  </div> 
+  
+                    <div class="services-svg">
+                      <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 165">
+                        <path style="fill:transparent" d="M-3,0S398.468,103.5,799.951,103.5C1201.47,103.5,1603,0,1603,0V167H-3V0Z"></path>
+                        <path style="fill:transparent" d="M-3,25S398.468,128.5,799.951,128.5C1201.47,128.5,1603,25,1603,25V168H-3V25Z"></path>
+                        <path style="fill:#fff" d="M-3,49S398.468,152.5,799.951,152.5C1201.47,152.5,1603,49,1603,49V167.5H-3V49Z"></path>
+                      </svg>	
+                    </div>
+                 </div>
+                <div class="text py-1">
+                  <ul class="py-3 px-5 text-end">
+                    <li class="list-unstyled mt-3 text-light" >امتیاز مشتری</li>
+                    <li class="list-unstyled mt-3 text-light" >کارواش غیر رایگان</li>
+                    <li class="list-unstyled mt-3 text-light" >٥٪ امتیاز</li>
+                    <li class="list-unstyled mt-3 text-light" >١٠٠٠ كيلومتر</li>
+                    <li class="list-unstyled mt-3 text-light" >خدمات ویژه</li>
+                    <li class="list-unstyled mt-3 text-light" >ماشین های کم </li>
+                    <li class="list-unstyled mt-3 text-light" >کارکرد</li>
+                    <li class="list-unstyled mt-3 text-light" >ویژه</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </section>
+        <!-- END SECTION SERVICES  -->
+
+    <!-- START SECTION SVG3 CAR AFTER SERVICES  -->
+
+    <section class="container-svg-3 position-relative">
+      <div class="card-svg-3">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406">
+          <path style="fill:#ffca08" d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z"></path>
+          <path style="fill:#ffca08" d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z"></path>
+          <path style="fill:#1c1601" d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z"></path>
+        </svg>	
+      </div>
+      <div class="svg-3-image position-absolute">
+        <img class="img-fluid" src="./assets/image/car-home.png" alt="">
+      </div>
+    </section>
+
+    <!-- END SECTION SVG3 CAR AFTER SERVICES  -->
+
+    <!-- START SECTION FEACHER  -->
+
+    <section class="feacher ">
+      <div class="container">
+        <div class="title text-center">
+          <p>اجاره ماشین طبق بودجه شما</p>
+          <h1 class="my-5">اجاره ماشین طبق بودجه و
+            پسند شما با <span class="position-relative text-warning">بهترین قیمت</span></h1>
+        </div>
+        <div class="slider mb-5">
+          
+          <div class="swiper mycar">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-container">
+                  <div class="swiper-slide-img">
+                    <img src="./assets/image/car-home-1.png" alt="">
+                </div>
+                <div class="swiper-slide-text">
+                  <h1 class="text-dark my-5">انواع ماشین ها</h1>
+                  <p>مجموعه متنوعی از  خدمات را در راستای صنعت رنت  خودرو  ارایه میدهد 
+                    که می توان به اجاره ماشین اشاره نمود</p>
+                </div>
+                </div>
+                
+
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-container">
+                  <div class="swiper-slide-img">
+                    <img src="./assets/image/car-home-2.png" alt="">
+                </div>
+                <div class="swiper-slide-text">
+                  <h1 class="text-dark my-5">انواع ماشین ها</h1>
+                  <p>مجموعه متنوعی از  خدمات را در راستای صنعت رنت  خودرو  ارایه میدهد 
+                    که می توان به اجاره ماشین اشاره نمود</p>
+                </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-container">
+                  <div class="swiper-slide-img">
+                    <img src="./assets/image/car-home-3.png" alt="">
+                </div>
+                <div class="swiper-slide-text">
+                  <h1 class="text-dark my-5">انواع ماشین ها</h1>
+                  <p>مجموعه متنوعی از  خدمات را در راستای صنعت رنت  خودرو  ارایه میدهد
+                     که می توان به اجاره ماشین اشاره نمود</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <form action="" class="text-center mt-5 mb-3">
+          <button class="btn btn-outline-warning px-3 rounded-5 px-4 py-2  " type="submit">  بهترین پیشنهادات</button>  
+
+        </form>
+      </div>
+    </section>
+    <!-- END SECTION FEACHER  -->
+
+    <!-- START SECTION SVG3 CAR AFTER FEACHER  -->
+
+    <section class="container-svg-2 position-relative">
+      <div class="card-svg-2">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406">
+            <path style="fill:#ffca08" d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z"></path>
+            <path style="fill:#1c1601" d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z"></path>
+            <path style="fill:#1c1601" d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z"></path>
+          </svg>
+      </div>
+      <div class="svg-2-image position-absolute">
+        <img class="img-fluid" src="./assets/image/home-bmw.png" alt="">
+      </div>
+      
+    </section>
+
+    <!-- END SECTION SVG3 CAR AFTER FEACHER  -->
+
+    <!-- START SECTION NUMBER  -->
+
+    <section class="numbers reveal">
+      <div class="container">
+        <div class="numbers-text text-center">
+          <p>ارقام و آمار ما</p>
+          <h1>مجموعه متنوعی از خدمات اجاره را در
+            راستای صنعت <span>اجاره ماشین!</span></h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 my-4 col-md-6 col-sm-12">
+            <div class="wrapper-card position-relative">
+              <div class="card text-center py-5 ">
+                <h1 class="py-5 text-warning  num" data-val="145">0</h1>
+              </div>
+              <button class="btn btn-outline-light px-3 rounded-5 px-4 py-2 position-absolute btn-numbers text-dark fs-5" type="submit"> مشتریان  </button>  
+            </div>
+          </div>
+          <div class="col-lg-3  my-4 col-md-6 col-sm-12">
+            <div class="wrapper-card position-relative">
+              <div class="card text-center py-5 ">
+                <h1 class="py-5 text-warning  num" data-val="10">0</h1>
+              </div>
+              <button class="btn btn-outline-light px-3 rounded-5 px-4 py-2 position-absolute btn-numbers text-dark fs-5" type="submit">  شعبه ها </button>  
+            </div>
+          </div>
+          <div class="col-lg-3 my-4 col-md-6 col-sm-12">
+            <div class="wrapper-card position-relative">
+              <div class="card text-center py-5 ">
+                <h1 class="py-5 text-warning num" data-val="27">0</h1>
+              </div>
+              <button class="btn btn-outline-light px-3 rounded-5 px-4 py-2 position-absolute btn-numbers text-dark fs-5" type="submit">   حامیان </button>  
+            </div>
+          </div>
+          <div class="col-lg-3 my-4 col-md-6 col-sm-12">
+            <div class="wrapper-card position-relative">
+              <div class="card text-center py-5 ">
+                <h1 class="py-5 text-warning  num" data-val="38"> 0</h1>
+              </div>
+              <button class="btn btn-outline-light px-3 rounded-5 px-4 py-2 position-absolute btn-numbers text-dark fs-5" type="submit">  ماشین جدید </button>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION NUMBER  -->
+
+    <!-- START SECTION SVG3 CAR AFTER NUMBER  -->
+
+    <section class="container-svg-3 position-relative">
+      <div class="card-svg-3">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406">
+          <path style="fill:#ffca08" d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z"></path>
+          <path style="fill:#ffca08" d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z"></path>
+          <path style="fill:#1c1601" d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z"></path>
+        </svg>	
+      </div>
+      <div class="svg-3-image position-absolute">
+        <img class="img-fluid" src="./assets/image/ford-mu-home.png" alt="">
+      </div>
+    </section>
+    <!-- END SECTION SVG3 CAR AFTER FEACHER  -->
+
+    <!-- START SECTION COMMENT  -->
+
+    <section class="comments">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="comments-text ">
+              <p>  نظرات مشتریان</p>
+              <h1>رضایت و گزیده ای از
+                نظرات <span> مشتریان ما</span></h1>
+  
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="swiper mycomment">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="comments-slider position-relative">
+                    <div class="row">
+                      <div class="card">
+                        <p>"با چشم‌اندازی چندین ساله با محوریت اعتماد <br class="clr">&nbsp; به مشتری، امکان اجاره خودرو<br class="clr">&nbsp; با شرایط بسیار آسان مانند رنت خودرو<br class="clr">&nbsp; بدون سند، چک را فراهم کرده است."</p>
+                      </div>
+                    </div>
+                    <div class="profile position-absolute">
+                      <img src="./assets/image/tstmnl1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text text-end ">
+                      <h3>یاسمین خلیلی</h3>
+                      <p>مدیر شرکت</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="comments-slider position-relative">
+                    <div class="row">
+                      <div class="card">
+                        <p>"با چشم‌اندازی چندین ساله با محوریت اعتماد <br class="clr">&nbsp; به مشتری، امکان اجاره خودرو<br class="clr">&nbsp; با شرایط بسیار آسان مانند رنت خودرو<br class="clr">&nbsp; بدون سند، چک را فراهم کرده است."</p>
+                      </div>
+                    </div>
+                    <div class="profile position-absolute">
+                      <img src="./assets/image/tstmnl2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text text-end ">
+                      <h3>یاسمین خلیلی</h3>
+                      <p>مدیر شرکت</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="comments-slider position-relative">
+                    <div class="row">
+                      <div class="card">
+                        <p>"با چشم‌اندازی چندین ساله با محوریت اعتماد <br class="clr">&nbsp; به مشتری، امکان اجاره خودرو<br class="clr">&nbsp; با شرایط بسیار آسان مانند رنت خودرو<br class="clr">&nbsp; بدون سند، چک را فراهم کرده است."</p>
+                      </div>
+                    </div>
+                    <div class="profile position-absolute">
+                      <img src="./assets/image/tstmnl2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text text-end ">
+                      <h3>یاسمین خلیلی</h3>
+                      <p>مدیر شرکت</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION COMMENT  -->
+    
+    <!-- START SECTION SVG3 CAR AFTER COMMENT  -->
+
+    <section class="container-svg-4 position-relative">
+      <div class="card-svg-4">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 406">
+            <path style="fill:rgba(167,167,167,0.25)" d="M1608.03,417H-1.709L-3.493,267.327c76.974,52.083,173.369,106.4,262.948,114.816,82.7,7.772,175.138-15.857,175.138-15.857,296.27-61.5,450.55-323.851,772.167-357.194,146.02-12.5,299.07,11.613,401.05,33.813Z"></path>
+            <path style="fill:#ffca08" d="M-2.25,405.5H1607.5l1-248.5S1498.97,67.09,1199,82.5C952.453,84.455,717.723,320.6,424,369c0,0-91,17-172,11-87.435-6.475-177.172-39.147-255.516-77.726Z"></path>
+            <path style="fill:#1c1601" d="M-5.143,340.337C87.619,364.359,200.042,380.486,309,381c298.183,1.4,631.464-245.093,878-242,244.99,3.074,420.5,129,420.5,129V410H-4.75Z"></path>
+          </svg>
+      </div>
+      <div class="svg-4-image position-absolute">
+        <img class="img-fluid" src="./assets/image/car-footer.png" alt="">
+      </div>
+      
+    </section>
+    <!-- END SECTION SVG3 CAR AFTER COMMENT  -->
+
+    <!-- START FOOTER  -->
+    <footer>
+      <div class="container">
+          <div class="icons-footer">
+            <div class="icon"><i class="bi bi-facebook"></i></div>
+            <div class="icon"><i class="bi bi-twitter"></i></div>
+            <div class="icon"><i class="bi bi-whatsapp"></i></div>
+            <div class="icon"><i class="bi bi-skype"></i></div>
+          </div>
+          <div class="card">
+            <div class="icon-card mb-4">
+              <img src="./assets/image/mail-footer.png" class="img-fluid" alt="">
+            </div>
+            <h1 class="">آیا خودرو اجاره ای نیاز دارید؟</h1>
+            <h1 class=" text-light number-phon">۰۲۱۲۲۲۳۴۵۶۷</h1>
+          </div>
+          <div class="footer-logo text-center my-5">
+            <img src="./assets/image/car-rental-logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="footer-mark text-center ">
+            <p> © راستچین سازی توسط تیم اکسترا. مشاهده نمونه کارها و خرید قالب </p>
+          </div>
+      </div>
+    </footer>
+    <!-- END FOOTER  -->
+
+    <!-- START SECTION HEADER BOTTOM FOR RESPONSIVE SIZE DISPLY BLOCK  -->
+    <section class="header-bottom">
+      <div class="container">
+        <a href="#" class="header-bottom-body">
+          <i class="bi bi-telephone"></i>
+          <h4>با ما تماس بگیرید</h4>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- START SCROLL TOB TO BACK BTN  -->
+    <button class="scrollbtn btn bg-warning rounded-5">
+      <i class="bi bi-chevron-up fs-3 fw-bold"></i>
+    </button>
+
+    <!-- START BTN HOVER SHOW MENU ICON  -->
+    <section class="xtra-additional">
+      <div class="xtra-additional-card">
+        <a href="# " class="download"> 
+          <i class="bi bi-download"></i>
+           <span>Download XTRA</span>
+      </a>
+
+      <a href="" class="youtube icons-none">
+        <i class="bi bi-youtube"></i>
+        <span>آموزش تصویری</span>
+      </a>
+      
+      <a href="#" class="text-file icons-none">
+        <i class="bi bi-file-text"></i>
+        <span>مستندات</span>
+      </a>
+      <a href="#" class="coldslash icons-none">
+        <i class="bi bi-code-slash"></i>
+        <span>Export Template</span>
+      </a>
+      </div>
+
+    </section>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  <script src="./assets/js/index.js"></script>
+  </body>
+</html>

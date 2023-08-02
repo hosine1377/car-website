@@ -1,0 +1,384 @@
+@media all and (max-width: 1200px){
+    .svg-continer {
+        .card-img-car {
+         width: 465px !important;
+         
+       }
+    }
+    .line{
+        display: none;
+    }
+}
+@media all and (max-width: 992px){
+   header{
+    // height: 140vh !important;
+    .swiper .swiper-slide .swiper-imag {
+        display: block;
+        width: 100%;
+        height: 88% !important;
+      }
+      .text-img-1{
+        left: 0 !important;
+        width: 250px !important;
+        height: 171px !important;
+        display: block !important;
+        top: 20% !important;
+    }
+  .text-slide-1 {
+   
+            top:20% !important;
+            text-align: center;
+    // h1{
+    //     font-size:1.5rem !important;
+    // }
+    h1{
+        font-size:3rem !important;
+    }
+}
+.text-img-2{
+    height: 171px !important;
+    display: block !important;
+    top: 20% !important;
+}
+.text-slide-2 {
+    top:26% !important;
+    text-align: center;
+    padding: 0 !important;
+ 
+    // h1{
+    //     white-space:normal !important;
+    //     font-size:1.9rem !important;
+    // }
+    h1{
+        font-size:3rem !important;
+    }
+    div{
+        justify-content: center !important;
+    }
+    .btn{
+        font-size: .9rem !important;
+        padding: .4rem .9rem !important;
+    }
+    h3{
+        font-size: .9rem !important;
+    }
+}
+   }
+   form.nav-btn{
+    display: none !important;
+   }
+   .shopping-cart-icon{
+    display: block !important;
+  }
+    .line{
+        display: none !important;
+    }
+.svg-continer {
+        bottom: 88px !important;
+    .card-img-car {
+        width: 375px !important;
+        bottom: 20px !important;
+
+        
+      }
+    .svg-card {
+  
+        // top: -339px !important;
+        bottom: 0 !important;
+      }
+      
+}
+.offcanvas-start{
+    background:$nav-background !important;
+    z-index: 1000;
+    .offcanvas-body{
+        padding: 0;
+        ul{
+            padding: 0;
+           li{
+        border-bottom:1px solid $navlink-color ;
+        color: $navlink-color;
+        padding: 0;
+      } 
+        }
+      
+    }
+  }
+  .container-svg-2{
+    .svg-2-image{
+        width: 450px !important ;
+        height: auto;
+        bottom: -36px !important;
+        right: 0;
+    }
+  }
+  .container-svg-3{
+    .svg-3-image{
+        width: 450px !important ;
+        height: auto;
+        bottom: 10px !important;
+        left: 0;
+    }
+  }
+  .container-svg-4{
+    .svg-4-image{
+        width: 450px !important ;
+        height: auto;
+        bottom: -36px !important;
+        right: 0;
+    }
+  }
+
+}
+@media all and (max-width:762px){
+        .canva{
+            border-radius: 0 !important;
+            margin: 0 !important;
+            background-color:#1c1601 !important;
+          }
+          .svg-continer {
+            position: absolute;
+            bottom: 88px;
+            width: 100%;
+            z-index: 1000;
+            .card-img-car {
+                // width: 375px !important;
+                bottom: -300px !important;
+        
+                
+              }
+            .svg-card {
+          
+                // top: -339px !important;
+                bottom: 0 !important;
+              }
+              .card-icon-header{
+                right: 77px !important;
+                bottom: -86px !important;
+                width: 150px !important;
+              }
+        }
+        .services{
+        .boxs{
+            position: relative !important;
+           .box-col-text{
+            position: static !important;
+        }
+    }
+}
+.wrapper-card{
+    .btn-numbers{
+        bottom: -27px;
+        right: 39% !important;
+        background: $light-color;
+    
+}
+}
+footer{
+    .icons-footer{
+        padding-top: 2rem;
+    }
+    .card{
+        flex-direction: column !important;
+    }
+}
+}
+@media all and (max-width:390px){
+    header {
+        height: 130vh !important;
+   
+    .navbar-toggler-icon{
+        font-size: 1rem !important;
+    }
+    .navbar-brand{
+        width: 150px !important;
+        height: auto;
+      }
+      .swiper .swiper-slide .swiper-imag {
+        display: block;
+        width: 100%;
+        height: 68% !important;
+      }
+      .canva{
+        background-color:$nav-background !important;
+      }
+       .svg-continer {
+        position: absolute;
+        left:px !important;
+        bottom: 211px !important;
+       .card-img-car {
+        position: absolute;
+        left:0px !important;
+        bottom: -210px !important;
+        width: 271px !important;
+        height: 153px !important;
+        z-index: 1000;
+        
+      }
+       .svg-card {
+
+        top: -418px !important;
+        
+      }
+        .card-icon-header {
+            right: 22px !important;
+            bottom: -66px !important;
+            width: 110px !important;
+        
+         }
+        }
+        .text-img-1{
+            left: 0 !important;
+            width: 250px !important;
+            height: 171px !important;
+            display: block !important;
+            top: 20% !important;
+        }
+      .text-slide-1 {
+       
+                top:20% !important;
+                text-align: center;
+        h1{
+            font-size:1.5rem !important;
+        }
+    }
+    .text-img-2{
+        height: 171px !important;
+        display: block !important;
+        top: 20% !important;
+    }
+    .text-slide-2 {
+        top:16% !important;
+        text-align: center;
+        padding: 0 !important;
+        
+        h1{
+            white-space:normal !important;
+            font-size:1.5rem !important;
+        }
+        .btn{
+            font-size: .9rem !important;
+            padding: .4rem .9rem !important;
+        }
+        h3{
+            font-size: .9rem !important;
+        }
+    }
+    }
+    .home{
+        padding-top: 5rem !important;
+        .title{
+            p{
+                font-size: 1.2rem !important;
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .services{
+        .services-text {
+            p{
+                font-size: 20px !important;
+            }
+            h1{
+                font-size: 2rem !important;
+            }
+            h4{
+                font-size: 1rem !important;
+            }
+        }
+    }
+    .feacher {
+        .title{
+            p{
+                font-size: 20px !important;
+            }
+            h1{
+                font-size: 1.3rem !important;
+            }
+        }
+    }
+    .numbers {
+        .numbers-text{
+            p{
+                font-size: 20px !important;
+            }
+            h1{
+                font-size: 1.7rem !important;
+            }
+        }
+        .wrapper-card{
+            .btn-numbers{
+                right: 25% !important;
+            }
+        } 
+    }
+    .comments{
+        .comments-text{
+            p{
+                font-size: 20px !important;
+            }
+            h1{
+                font-size: 2rem !important;
+                margin-bottom: 2rem !important;
+            }
+        }
+    }
+    .container-svg-2{
+        svg{
+            height: 100px !important;
+        }
+        .svg-2-image{
+            width: 250px !important ;
+            height: auto;
+            bottom: -60px !important;
+            right: 0;
+        }
+      }
+      .container-svg-3{
+        svg{
+            height: 100px !important;
+        }
+        .svg-3-image{
+            width: 250px !important ;
+            height: auto;
+            bottom: -20px !important;
+            left: 0 !important;
+        }
+      }
+      .container-svg-4{
+        svg{
+            height: 100px !important;
+        }
+        .svg-4-image{
+            width: 250px !important ;
+            height: auto;
+            bottom: -60px !important;
+            right: 0;
+        }
+      }
+
+      footer{
+     
+        .icons-footer{
+            padding-top: 4rem;
+            .icon{
+                width: 50px !important;
+                height: 50px !important;
+                line-height: 45px !important;
+                
+            
+                i{
+                   font-size: 1.5rem !important;
+                   margin: 14px !important;
+                }
+            }
+        }
+        .card{
+            .icon-card {
+                width: 80px !important;
+            }
+        }
+    }
+}
